@@ -1,5 +1,0 @@
-# Training Metrics
-
-- RMSE on the train set: 4.7306
-- RMSE on the test set: 5.0584
-- Rows after filtering: 46307
