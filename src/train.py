@@ -32,7 +32,7 @@ def calculate_trip_duration_in_minutes(df):
         df["lpep_dropoff_datetime"] - df["lpep_pickup_datetime"]
     ).dt.total_seconds() / 60
     # Keep a realistic training range and remove obvious trip duration outliers.
-    return df[(df[TARGET] >= 1) & (df[TARGET] <= 60)]
+    return df[(df[TARGET] >= 1) & (df[TARGET] <= 30)]
 
 
 def preprocess(df):
