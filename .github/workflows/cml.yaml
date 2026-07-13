@@ -5,9 +5,6 @@ on:
     branches:
       - main
 
-env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
-
 permissions:
   contents: read
   issues: write
@@ -24,7 +21,7 @@ jobs:
         with:
           python-version: "3.11.3"
 
-      - uses: iterative/setup-cml@v2.0.1
+      - uses: iterative/setup-cml@v3
 
       - name: Install dependencies
         run: |
